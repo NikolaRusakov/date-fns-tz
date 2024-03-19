@@ -24,7 +24,7 @@ interface CurriedFn4<A, B, C, D, R> {
   <A, B, C, D>(a: A, b: B, c: C, d: D): R
 }
 
-declare module 'date-fns-tz' {
+declare module '@doto-solutions/date-fns-tz' {
   import type { Day, FirstWeekContainsDate, Locale, LocaleUnit, RoundingMethod } from 'date-fns'
 
   export type OptionsWithTZ = {
@@ -44,8 +44,8 @@ declare module 'date-fns-tz' {
 
 // Regular Functions
 
-declare module 'date-fns-tz' {
-  import { OptionsWithTZ } from 'date-fns-tz'
+declare module '@doto-solutions/date-fns-tz' {
+  import { OptionsWithTZ } from '@doto-solutions/date-fns-tz'
 
   function format(date: Date | number, format: string, options?: OptionsWithTZ): string
   namespace format {}
@@ -80,99 +80,99 @@ declare module 'date-fns-tz' {
 }
 
 declare module 'date-fns-tz/format' {
-  import { format } from 'date-fns-tz'
+  import { format } from '@doto-solutions/date-fns-tz'
   export = format
 }
 
 declare module 'date-fns-tz/formatInTimeZone' {
-  import { formatInTimeZone } from 'date-fns-tz'
+  import { formatInTimeZone } from '@doto-solutions/date-fns-tz'
   export = formatInTimeZone
 }
 
 declare module 'date-fns-tz/getTimezoneOffset' {
-  import { getTimezoneOffset } from 'date-fns-tz'
+  import { getTimezoneOffset } from '@doto-solutions/date-fns-tz'
   export = getTimezoneOffset
 }
 
 declare module 'date-fns-tz/toDate' {
-  import { toDate } from 'date-fns-tz'
+  import { toDate } from '@doto-solutions/date-fns-tz'
   export = toDate
 }
 
 declare module 'date-fns-tz/utcToZonedTime' {
-  import { utcToZonedTime } from 'date-fns-tz'
+  import { utcToZonedTime } from '@doto-solutions/date-fns-tz'
   export = utcToZonedTime
 }
 
 declare module 'date-fns-tz/zonedTimeToUtc' {
-  import { zonedTimeToUtc } from 'date-fns-tz'
+  import { zonedTimeToUtc } from '@doto-solutions/date-fns-tz'
   export = zonedTimeToUtc
 }
 
 declare module 'date-fns-tz/format/index' {
-  import { format } from 'date-fns-tz'
+  import { format } from '@doto-solutions/date-fns-tz'
   export = format
 }
 
 declare module 'date-fns-tz/formatInTimeZone/index' {
-  import { formatInTimeZone } from 'date-fns-tz'
+  import { formatInTimeZone } from '@doto-solutions/date-fns-tz'
   export = formatInTimeZone
 }
 
 declare module 'date-fns-tz/getTimezoneOffset/index' {
-  import { getTimezoneOffset } from 'date-fns-tz'
+  import { getTimezoneOffset } from '@doto-solutions/date-fns-tz'
   export = getTimezoneOffset
 }
 
 declare module 'date-fns-tz/toDate/index' {
-  import { toDate } from 'date-fns-tz'
+  import { toDate } from '@doto-solutions/date-fns-tz'
   export = toDate
 }
 
 declare module 'date-fns-tz/utcToZonedTime/index' {
-  import { utcToZonedTime } from 'date-fns-tz'
+  import { utcToZonedTime } from '@doto-solutions/date-fns-tz'
   export = utcToZonedTime
 }
 
 declare module 'date-fns-tz/zonedTimeToUtc/index' {
-  import { zonedTimeToUtc } from 'date-fns-tz'
+  import { zonedTimeToUtc } from '@doto-solutions/date-fns-tz'
   export = zonedTimeToUtc
 }
 
 declare module 'date-fns-tz/format/index.js' {
-  import { format } from 'date-fns-tz'
+  import { format } from '@doto-solutions/date-fns-tz'
   export = format
 }
 
 declare module 'date-fns-tz/formatInTimeZone/index.js' {
-  import { formatInTimeZone } from 'date-fns-tz'
+  import { formatInTimeZone } from '@doto-solutions/date-fns-tz'
   export = formatInTimeZone
 }
 
 declare module 'date-fns-tz/getTimezoneOffset/index.js' {
-  import { getTimezoneOffset } from 'date-fns-tz'
+  import { getTimezoneOffset } from '@doto-solutions/date-fns-tz'
   export = getTimezoneOffset
 }
 
 declare module 'date-fns-tz/toDate/index.js' {
-  import { toDate } from 'date-fns-tz'
+  import { toDate } from '@doto-solutions/date-fns-tz'
   export = toDate
 }
 
 declare module 'date-fns-tz/utcToZonedTime/index.js' {
-  import { utcToZonedTime } from 'date-fns-tz'
+  import { utcToZonedTime } from '@doto-solutions/date-fns-tz'
   export = utcToZonedTime
 }
 
 declare module 'date-fns-tz/zonedTimeToUtc/index.js' {
-  import { zonedTimeToUtc } from 'date-fns-tz'
+  import { zonedTimeToUtc } from '@doto-solutions/date-fns-tz'
   export = zonedTimeToUtc
 }
 
 // FP Functions
 
 declare module 'date-fns-tz/fp' {
-  import { OptionsWithTZ } from 'date-fns-tz'
+  import { OptionsWithTZ } from '@doto-solutions/date-fns-tz'
 
   const format: CurriedFn2<string, Date | number, string>
   namespace format {}
@@ -382,7 +382,7 @@ declare module 'date-fns-tz/fp/zonedTimeToUtcWithOptions/index.js' {
 // ECMAScript Module Functions
 
 declare module 'date-fns-tz/esm' {
-  import { OptionsWithTZ } from 'date-fns-tz'
+  import { OptionsWithTZ } from '@doto-solutions/date-fns-tz'
 
   function format(date: Date | number, format: string, options?: OptionsWithTZ): string
   namespace format {}
@@ -509,7 +509,7 @@ declare module 'date-fns-tz/esm/zonedTimeToUtc/index.js' {
 // ECMAScript Module FP Functions
 
 declare module 'date-fns-tz/esm/fp' {
-  import { OptionsWithTZ } from 'date-fns-tz'
+  import { OptionsWithTZ } from '@doto-solutions/date-fns-tz'
 
   const format: CurriedFn2<string, Date | number, string>
   namespace format {}
