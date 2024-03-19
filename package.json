@@ -1,5 +1,5 @@
 {
-  "name": "date-fns-tz",
+  "name": "@doto-solutions/date-fns-tz",
   "version": "3.0.0-beta.0",
   "sideEffects": false,
   "description": "Time zone support for date-fns v3 with the Intl API",
