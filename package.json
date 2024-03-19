@@ -1,6 +1,6 @@
 {
   "name": "@doto-solutions/date-fns-tz",
-  "version": "3.0.0-beta.0",
+  "version": "3.0.0-beta.1",
   "sideEffects": false,
   "description": "Time zone support for date-fns v3 with the Intl API",
   "author": "Marnus Weststrate <marnusw@gmail.com>",
@@ -105,11 +105,6 @@
     "prettier": "prettier . --write",
     "lint": "eslint .",
     "lint-types": "eslint --config=.ts-eslintrc.js typings.d.ts"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
   },
   "lint-staged": {
     "*.js": [
